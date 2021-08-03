@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        var url = "ajax.js";
+        $.getScript(url);
+    </script>
+    
+</head>
+
+<body>
+    <div id="result">
+
+        <div class="container" style="white-space: nowrap; margin: 0 auto; width: 80%;">
+            <form method="POST">
+                <h1>Выберите период</h1>
+                    <div style="display: inline-block;width: 50%;">
+                        <label>с даты </label><br /><br />
+                        <input type="date" name="startDate" class="startDate" style="width: 99%;" />
+                    </div>
+                    <div style="display: inline-block;width: 50%;">
+                        <label>по дату</label><br /><br />
+                        <input type="date" name="finishDate" class="finishDate" style="width: 99%;" />
+                    </div><br><br>
+                <input type="button" id="btn" value="Submit" />
+            </form>
+        </div>
+
+    <!-- здесь выводится таблица -->
+
+    </div>
+
+</body>
+
+</html>
